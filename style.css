@@ -1,0 +1,130 @@
+/* Estilo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0066cc;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+    width: 80%;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+section .container {
+    max-width: 1200px;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Imagens */
+.imagem-introducao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.imagem-energia {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.imagem-energia:hover {
+    transform: scale(1.05);
+}
+
+/* Infográficos */
+.grafico {
+    margin-top: 20px;
+    text-align: center;
+}
+
+canvas {
+    width: 80% !important;
+    height: 400px;
+}
+
+/* FAQ */
+.faq-item {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #e0e0e0;
+}
+
+.faq-item h3 {
+    margin: 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Animação */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
